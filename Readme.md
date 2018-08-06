@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Константин Любимов](https://up.htmlacademy.ru/htmlcss/22/user/684631).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
