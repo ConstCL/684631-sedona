@@ -1,4 +1,4 @@
-.DS_Store
+.sedona-prototype/.DS_Store
 .idea
 .vscode
 *.ai
@@ -9,3 +9,4 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
