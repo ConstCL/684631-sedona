@@ -1,4 +1,7 @@
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+ <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -24,90 +27,103 @@
         <p>найдено:3</p>
         <ul class="result-list">
           <li class="result-item-sort">сортировка:</li>
-          <li class="result-item-price">по цене</li>
-          <li class="result-item-type">по типу</li>
-          <li class="result-item-rating">по рейтингу</li>
-          <li class="result-item-arrows"><span>^ ^</span></li>
+          <li class="result-item-price"><a href="">по цене</a></li>
+          <li class="result-item-type"><a href="">по типу</a></li>
+          <li class="result-item-rating"><a href="">по рейтингу</a></li>
+          <li class="result-item-arrows"><a href=""><span>up</span></a></li>
+          <li class="result-item-arrows"><a href=""><span>down</span></a></li>
         </ul>
       </section>
       
       <section class="hotels">
         <h2 class="visually-hidden">Список отелей</h2>
-        <article class="amara">
-          <div class="amara-image"> 
+        <article class="hotel_card">
+          <div class="hotel_image"> 
               <a href="amara_resort.html">
                 <img src="img/Amara.jpg" width="150" height="100" alt="AMARA RESORT & SPA">
               </a> 
           </div>
-          <div class="amara-info">
-            <h3 class="amara-info-name">
+          <div class="hotel_info">
+            <h3 class="hotel_name">
               <a href="amara_resort.html">AMARA RESORT & SPA
               </a>
             </h3>
-            <p class="amara-info-type">гостиница</p>
-            <p class="amara-info-cost"> от 4000 Р.</p>
-            <p class="amara-info-buttons">
-              <a class="amara-info-buttons-details" type="button" href="#">Подробнее</a>
-            </p>
-            <p class="amara-info-book">
-              <a class="amara-info-buttons-book" type="button" href="#">Забронировать</a>
-            </p>
+            <div class="hotel_block1">
+              <p class="hotel_type">гостиница</p>
+              <p class="hotel_cost"> от 4000 Р.</p>
+            </div>
+            <div class="hotel_block2">
+              <p class="hotel-link">
+                <a class="hotel-link-details" href="#">Подробнее</a>
+              </p>
+              <p class="hotel-book">
+                <a class="hotel-book_link-book" href="#">Забронировать</a>
+              </p>
+            </div>
           </div>
-          </div class="amara-rate">
-            <p> <span class="amara-rate-stars">4 stars</span></p>
-            <p class="amara-rate-number">Рейтинг 8,5</p>
+          <div class="hotel-rate">
+            <p> <span class="hotel-rate_stars">4 stars</span></p>
+            <p class="hotel-rate_number">Рейтинг 8,5</p>
           </div>
         </article>
 
-        <article class="desert">
-          <div class="desert-image"> 
+        <article class="hotel_card">
+          <div class="hotel_image"> 
               <a href="desert.html">
                 <img src="img/desert.jpg" width="150" height="100" alt="DESERT QUAIL INN">
-              </a> 
+              </a>
           </div>
-          <div class="desert-info">
-            <h3 class="desert-info-name">
+          <div class="hotel_info">
+            <h3 class="hotel_name">
               <a href="desert.html">DESERT QUAIL INN
               </a>
             </h3>
-            <p class="desert-info-type">мотель</p>
-            <p class="desert-info-cost"> от 3000 Р.</p>
-            <p class="desert-info-buttons">
-              <a class="desert-info-buttons-details" type="button" href="#">Подробнее</a>
-            </p>
-            <p class="desert-info-book">
-              <a class="desert-info-buttons-book" type="button" href="#">Забронировать</a>
-            </p>
+             <div class="hotel_block1">
+               <p class="hotel_type">мотель</p>
+               <p class="hotel_cost"> от 3000 Р.</p>
+             </div>
+             <div class="hotel_block2">
+               <p class="hotel-link">
+                 <a class="hotel-link-details" href="#">Подробнее</a>
+               </p>
+               <p class="hotel-book">
+                 <a class="hotel-book_link-book" href="#"> Забронировать</a>
+               </p>
+             </div>
           </div>
-          </div class="desert-rate">
-            <p> <span class="desert-rate-stars">3 stars</span></p>
-            <p class="desert-rate-number">Рейтинг 8,9</p>
+          <div class="hotel-rate">
+            <p> <span class="hotel-rate_stars">3 stars</span></p>
+            <p class="hotel-rate_number">Рейтинг 8,9</p>
           </div>
         </article>
 
-        <article class="villas">
-          <div class="villas-image"> 
+        <article class="hotel_card">
+          <div class="hotel_image"> 
               <a href="villas.html">
                 <img src="img/villas.jpg" width="150" height="100" alt="VILLAS AT POCO DIABLO">
-              </a> 
+              </a>
           </div>
-          <div class="villas-info">
-            <h3 class="villas-info-name">
-              <a href="villas.html">"VILLAS AT POCO DIABLO"
+          <div class="hotel_info">
+            <h3 class="hotel_name">
+              <a href="villas.html">VILLAS AT POCO DIABLO
               </a>
             </h3>
-            <p class="villas-info-type">апартаменты</p>
-            <p class="villas-info-cost"> от 2000 Р.</p>
-            <p class="villas-info-buttons">
-              <a class="villas-info-buttons-details" type="button" href="#">Подробнее</a>
-            </p>
-            <p class="villas-info-book">
-              <a class="villas-info-buttons-book" type="button" href="#">Забронировать</a>
-            </p>
+              <div class="hotel_block1">
+                <p class="hotel_type">апартаменты</p>
+                <p class="hotel_cost"> от 2000 Р.</p>
+              </div>
+              <div class="hotel_block2">
+                <p class="hotel-link">
+                  <a class="hotel-link-details" href="#">Подробнее</a>
+                </p>
+                <p class="hotel-book">
+                  <a class="hotel-book_link-book" href="#">Забронировать  </a>
+                </p>
+              </div>
           </div>
-          </div class="villas-rate">
-            <p> <span class="villas-rate-stars">2 stars</span></p>
-            <p class="villas-rate-number">Рейтинг 9,2</p>
+          <div class="hotel-rate">
+            <p> <span class="hotel-rate_stars">2 stars</span></p>
+            <p class="hotel-rate_number">Рейтинг 9,2</p>
           </div>
         </article>
       </section>
@@ -126,5 +142,6 @@
         <a class="intensive" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
+  </main>
   </body>
 </html>
