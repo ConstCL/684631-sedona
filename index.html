@@ -20,7 +20,7 @@
     </header>
     <main>
       <div>
-        <img src="#" alt="Welcome to the Sedona" width="1200"
+        <img src="img/background-photo.jpg" alt="Welcome to the Sedona" width="1200"
         height="506">
       </div>
 
@@ -84,7 +84,7 @@
       <section class="hotel-search">      
       	<h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
-        <button type="button" class="booking-button">Поиск гостиницы в Седоне
+        <button type="button" class="modal-window">Поиск гостиницы в Седоне
         </button>
       </section>
 
@@ -96,15 +96,37 @@
         <a href="#">#visitsedona</a>
       </p>
       <ul>
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Youtube</a></li>
+        <li><a class="social-button" href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+        <li><a class="social-button" href="#" aria-label="Read us in Facebook">Facebook</a></li>
+        <li><a class="social-button" href="#" aria-label="Watch us in Youtube">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <b>website by</b> 
         <a class="intensive" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
+    <section class="modal modal-search">
+      <h2>Search of the hotel</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="visit-date">Дата заезда</label>
+          <input class="kalendar-icon" id="visit-date" type="date" name="date-of-visit" placeholder="00.00.0000" aria-label="visit date field">
+        </p>
+        <p>
+          <label for="leave-date">Дата выезда</label>
+          <input class="kalendar-icon" id="leave-date" type="date" name="date-of-leaving" placeholder="00.00.0000" aria-label="leave date field">
+        </p>
+        <p>
+          <label for="amount-adults">Взрослые:</label>
+          <input type="number" min="1" max="50" step="1" id="amount-adults" name="amount" aria-label="number of adults">
+        </p>
+        <p>
+          <label for="amount-children">Дети:</label>
+          <input type="number" min="1" max="50" step="1" id="amount-children" name="amount" aria-label="number of children">
+        </p>
+        <button class="search-button" type="button">Найти</button>
+      </form>
+    </section>
 
   </body>
 </html>

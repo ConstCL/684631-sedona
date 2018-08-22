@@ -21,7 +21,50 @@
     <main>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр подбора отелей</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool-field">
+                <label  for="pool-field">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking-field" checked>
+                <label for="parking-field">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi-field" checked>
+                <label for="wi-fi-field">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+              <ul>
+                <li>
+                  <input class="visually-hidden filter-input   filter-input-checkbox" type="checkbox" name="inn" id="  inn-field">
+                  <label for="inn-field">Гостиница</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-input   filter-input-checkbox" type="checkbox" name="motel" id="  motel-field">
+                  <label for="motel-field">Мотель</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-input   filter-input-checkbox" type="checkbox" name="apartments" id  ="apartments-field">
+                  <label for="apartments-field">Апартаменты</label>
+                </li>
+              </ul>
+          </fieldset>
+          <div class="choosing-price">
+            <div class="price-range">
+              <p> от 0</p>
+              <p> до 3000</p>
+            </div>
+            <input class="" type="range" min="0" max="3000" aria-lab"range of the price">
+            <button class="result-button" type="button">Показать</button>
+          </div>
+        </form>
       </section>
       <section class="result">
         <p>найдено:3</p>
@@ -30,11 +73,10 @@
           <li class="result-item-price"><a href="">по цене</a></li>
           <li class="result-item-type"><a href="">по типу</a></li>
           <li class="result-item-rating"><a href="">по рейтингу</a></li>
-          <li class="result-item-arrows"><a href=""><span>up</span></a></li>
-          <li class="result-item-arrows"><a href=""><span>down</span></a></li>
+          <li class="result-item-arrows"><a href=""><span class="up-arrow">up</span></a></li>
+          <li class="result-item-arrows"><a href=""><span class="down-arrow">down</span></a></li>
         </ul>
       </section>
-      
       <section class="hotels">
         <h2 class="visually-hidden">Список отелей</h2>
         <article class="hotel_card">
@@ -133,9 +175,9 @@
         <a href="#">#visitsedona</a>
       </p>
       <ul>
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Youtube</a></li>
+        <li><a class="social-button" href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+        <li><a class="social-button" href="#" aria-label="Read us in Facebook">Facebook</a></li>
+        <li><a class="social-button" href="#" aria-label="Watch us in Youtube">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <b>website by</b> 
