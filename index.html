@@ -106,27 +106,26 @@
       </p>
     </footer>
     <section class="modal modal-search">
-      <h2>Search of the hotel</h2>
+      <h2 class="visually-hidden">Search of the hotel</h2>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="visit-date">Дата заезда</label>
-          <input class="kalendar-icon" id="visit-date" type="date" name="date-of-visit" placeholder="00.00.0000" aria-label="visit date field">
+          <input class="visit-date" id="visit-date" type="text" name="date-of-visit" placeholder="24 апреля 2017" >
         </p>
         <p>
           <label for="leave-date">Дата выезда</label>
-          <input class="kalendar-icon" id="leave-date" type="date" name="date-of-leaving" placeholder="00.00.0000" aria-label="leave date field">
+          <input class="leave-date" id="leave-date" type="text" name="date-of-leaving" placeholder="4 июля 2017" >
         </p>
         <p>
           <label for="amount-adults">Взрослые:</label>
-          <input type="number" min="1" max="50" step="1" id="amount-adults" name="amount" aria-label="number of adults">
+          <input type="text" min="1" max="50" step="1" id="amount-adults" name="amount" >
         </p>
         <p>
           <label for="amount-children">Дети:</label>
-          <input type="number" min="1" max="50" step="1" id="amount-children" name="amount" aria-label="number of children">
+          <input type="text" min="1" max="50" step="1" id="amount-children" name="amount" >
         </p>
-        <button class="search-button" type="button">Найти</button>
+        <button class="search-button" type="submit">Найти</button>
       </form>
     </section>
-
   </body>
 </html>

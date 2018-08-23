@@ -41,28 +41,29 @@
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-              <ul>
-                <li>
-                  <input class="visually-hidden filter-input   filter-input-checkbox" type="checkbox" name="inn" id="  inn-field">
-                  <label for="inn-field">Гостиница</label>
-                </li>
-                <li>
-                  <input class="visually-hidden filter-input   filter-input-checkbox" type="checkbox" name="motel" id="  motel-field">
-                  <label for="motel-field">Мотель</label>
-                </li>
-                <li>
-                  <input class="visually-hidden filter-input   filter-input-checkbox" type="checkbox" name="apartments" id  ="apartments-field">
-                  <label for="apartments-field">Апартаменты</label>
-                </li>
-              </ul>
+            <ul>
+              <li>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="inn" id="inn-field">
+                <label for="inn-field">Гостиница</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-input   filter-input-checkbox" type="checkbox" name="motel" id="  motel-field">
+                <label for="motel-field">Мотель</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-input   filter-input-checkbox" type="checkbox" name="apartments" id  ="apartments-field">
+                <label for="apartments-field">Апартаменты</label>
+              </li>
+            </ul>
           </fieldset>
           <div class="choosing-price">
             <div class="price-range">
               <p> от 0</p>
               <p> до 3000</p>
             </div>
-            <input class="" type="range" min="0" max="3000" aria-lab"range of the price">
-            <button class="result-button" type="button">Показать</button>
+            <!-- Шкала с ползунком
+              <input class="" type="range" min="0" max="3000" aria-label="range of the price"> -->
+            <button class="result-button" type="submit">Показать</button>
           </div>
         </form>
       </section>
@@ -70,11 +71,11 @@
         <p>найдено:3</p>
         <ul class="result-list">
           <li class="result-item-sort">сортировка:</li>
-          <li class="result-item-price"><a href="">по цене</a></li>
-          <li class="result-item-type"><a href="">по типу</a></li>
-          <li class="result-item-rating"><a href="">по рейтингу</a></li>
-          <li class="result-item-arrows"><a href=""><span class="up-arrow">up</span></a></li>
-          <li class="result-item-arrows"><a href=""><span class="down-arrow">down</span></a></li>
+          <li class="result-item-price"><a href="#">по цене</a></li>
+          <li class="result-item-type"><a href="#">по типу</a></li>
+          <li class="result-item-rating"><a href="#">по рейтингу</a></li>
+          <li class="result-item-arrows"><a href="#"><span class="up-arrow">up</span></a></li>
+          <li class="result-item-arrows"><a href="#"><span class="down-arrow">down</span></a></li>
         </ul>
       </section>
       <section class="hotels">
@@ -175,9 +176,10 @@
         <a href="#">#visitsedona</a>
       </p>
       <ul>
-        <li><a class="social-button" href="#" aria-label="Follow us on Twitter">Twitter</a></li>
-        <li><a class="social-button" href="#" aria-label="Read us in Facebook">Facebook</a></li>
-        <li><a class="social-button" href="#" aria-label="Watch us in Youtube">Youtube</a></li>
+        <!-- потом добавлю aria-label -->
+        <li><a class="social-button" href="#">Twitter</a></li> 
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <b>website by</b> 
