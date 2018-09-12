@@ -2,67 +2,72 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <title>Sedona main</title>
   </head>
   <body>
   	<header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo-sedona.svg" width="50" height="50" alt="Герб города Седона">
+          <img src="img/logo-sedona.svg" width="138" height="71" alt="Герб города Седона">
         </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
+        <ul class="list site-navigation">
+          <li class="active-page"><a href="index.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li><a href="plan.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-page">
       <div>
-        <img src="img/background-photo.jpg" alt="Welcome to the Sedona" width="1200"
-        height="506">
+        <img src="img/background-photo.jpg" class ="main-welcome" alt="Welcome to the Sedona" width="1200" height="506">
+        <img src="img/polygon.svg" class="main-polygon" alt="Welcome to the Sedona" width="1200" height="59">
       </div>
 
       <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по  которым Седона лучше, чем Гранд Каньон!</p>
 
       <section class="features">
-      	<div class="feature feature-blue">
-          <h2>Настоящий городок</h2>
-          <p>№1</p>
-          <p>Седона - не аттракцион для туристов</p>
+      	<div class="feature">
+          <div class="feature-blue">
+            <h2>Настоящий городок</h2>
+            <p>№1</p>
+            <p>Седона - не аттракцион для туристов</p>
+          </div>
+          <div class="feature-restaurant_photo">
+            <img src="img/restaurant-full.jpg" width="800" height="255" alt="Ресторан">
+          </div>
         </div>
 
-        <div class="feature-restaurant_photo">
-          <img src="img/restaurant-full.jpg" width="800" height="255" alt="Ресторан">
-        </div>
-
-        <ul class="advantages">
+        <ul class="list advantages">
           <li class="advantages-item advantages-item-house">
-            <h3>Жилье</h3>
+            <h2>Жилье</h2>
             <p>Рекомедуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="advantages-item advantages-item-food">
-            <h3>Еда</h3>
+            <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
           </li>
           <li class="advantages-item advantages-item-gift">
-            <h3>Сувениры</h3>
+            <h2>Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
 
-        <div class="feature feature-blue">
-          <h2>Там есть Мост дьявола</h2>
-          <p>№2</p>
-          <p>Да, по нему можно пройти! Если конечно осмелитесь</p>
-        </div>
-        <div class="feature-bridge_photo">
-          <img src="img/brigde-full.jpg" width="800" height="255" alt="Мост дьявола">
+        <div class="feature">
+          <div class="feature-blue">
+            <h2>Там есть Мост дьявола</h2>
+            <p>№2</p>
+            <p>Да, по нему можно пройти! Если конечно осмелитесь</p>
+          </div>
+          <div class="feature-bridge_photo">
+            <img src="img/brigde-full.jpg" width="800" height="255" alt="  Мост дьявола">
+          </div>
         </div>
 
-        <ul class="feature other-features-list">
+        <ul class="list feature other-features-list">
           <li class="feature feature-square">
             <h2>Небольшая площадь</h2>
             <p>№3</p>
@@ -88,14 +93,16 @@
         </button>
       </section>
 
-      <div>Карта территории</div>
+      <div class="map">
+        <img src="img/map.jpg" alt="Карта территории">
+      </div>
     </main>
 
     <footer class="main-footer">
       <p class="footer-hashtag">
         <a href="#">#visitsedona</a>
       </p>
-      <ul>
+      <ul class="list social">
         <li><a class="social-button" href="#" aria-label="Follow us on Twitter">Twitter</a></li>
         <li><a class="social-button" href="#" aria-label="Read us in Facebook">Facebook</a></li>
         <li><a class="social-button" href="#" aria-label="Watch us in Youtube">Youtube</a></li>
@@ -106,7 +113,7 @@
       </p>
     </footer>
     <section class="modal modal-search">
-      <h2 class="visually-hidden">Search of the hotel</h2>
+      <a class="search-btn" href="form.html">Поиск гостиницы в седоне</a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="visit-date">Дата заезда</label>
@@ -118,7 +125,7 @@
         </p>
         <p>
           <label for="amount-adults">Взрослые:</label>
-          <input type="text" min="1" max="50" step="1" id="amount-adults" name="amount" >
+          <input type="text" step="1" id="amount-adults" name="amount" >
         </p>
         <p>
           <label for="amount-children">Дети:</label>

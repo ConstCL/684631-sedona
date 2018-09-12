@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
- <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <title>Sedona hotels</title>
   </head>
   <body>
   	<header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo-sedona.svg" width="50" height="50" alt="Герб города Седона">
+          <img src="img/logo-sedona.svg"  width="138" height="71" alt="Герб города Седона">
         </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
+        <ul class="list site-navigation">
+          <li><a href="index.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li><a href="plan.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="lodging.html">Гостиницы</a></li>
+          <li class="active-page"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -69,13 +71,13 @@
       </section>
       <section class="result">
         <p>найдено:3</p>
-        <ul class="result-list">
+        <ul class="list result-list">
           <li class="result-item-sort">сортировка:</li>
-          <li class="result-item-price"><a href="#">по цене</a></li>
-          <li class="result-item-type"><a href="#">по типу</a></li>
-          <li class="result-item-rating"><a href="#">по рейтингу</a></li>
-          <li class="result-item-arrows"><a href="#"><span class="up-arrow">up</span></a></li>
-          <li class="result-item-arrows"><a href="#"><span class="down-arrow">down</span></a></li>
+          <li class="result-sort"><a href="#">по цене</a></li>
+          <li class="result-sort"><a href="#">по типу</a></li>
+          <li class="result-sort"><a href="#">по рейтингу</a></li>
+          <li><a class="arrow arrow-up" href="#"></a></li>
+          <li><a class="arrow arrow-down" href="#"></a></li>
         </ul>
       </section>
       <section class="hotels">
@@ -86,7 +88,7 @@
                 <img src="img/amara.jpg" width="150" height="100" alt="AMARA RESORT & SPA">
               </a> 
           </div>
-          <div class="hotel_info">
+          <div class="c">
             <h3 class="hotel_name">
               <a href="amara_resort.html">AMARA RESORT & SPA
               </a>
@@ -176,7 +178,7 @@
         <a href="#">#visitsedona</a>
       </p>
       <ul>
-        <!-- потом добавлю aria-label -->
+        <!-- потом добавлю aria-label ниже -->
         <li><a class="social-button" href="#">Twitter</a></li> 
         <li><a class="social-button" href="#">Facebook</a></li>
         <li><a class="social-button" href="#">Youtube</a></li>
